@@ -1,0 +1,686 @@
+@import url('https://fonts.googleapis.com/css2?family=Gluten:wght@200;300;400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+a {
+    color:blueviolet;
+    text-decoration: none;
+    transition: 0.3s;
+    font-weight: 500;
+}
+
+a:hover {
+    background-color: #7f0283;
+    border-radius: 10px;
+    transition: 1s ease;
+}
+
+.logo {
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: Gluten, Arial, Helvetica, sans-serif;
+    background-color: #510053;
+    height: 8vh;
+}
+
+.nave-list {
+    list-style: none;
+    display: flex;
+}
+
+.nave-list li {
+    letter-spacing: 3px;
+    margin-left: 32px;
+}
+
+.menu-respo {
+    display: none;
+    cursor: pointer;
+}
+
+.menu-respo div {
+    width: 32px;
+    height: 2px;
+    background: #AE29B3;
+    margin: 8px;
+    transition: 0.3s;
+}
+
+
+/*Sessão home*/
+.home{
+    background: url("../imagens/fundopl.png")no-repeat center center;
+    background-size: cover;
+    height: 92vh; 
+}
+
+.carum {
+    position: absolute;
+    width: 38%;
+    height: 50%;
+    margin-left: 10%;
+    margin-top: 10%;
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    background-color:rgba(139, 24, 124, 0.116)
+    
+}
+
+.max-width {
+    position: absolute;
+    top: 31%;
+    left: 12%;
+    max-width: 400px;
+}
+
+.texto-descricao h1 {
+    font-family: Gluten, Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    color: #AE29B3;
+    padding: 5px;
+
+    animation: flutuarh 4s ease-in-out infinite;
+}
+
+@keyframes flutuarh {
+    0%, 100%{
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-30px);
+    }
+}
+
+.texto-descricao p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color: #ee9878;
+}
+
+/*sessão saturno*/
+
+.homeSatur {
+    background: url("../imagens/fundo.png")no-repeat center center;
+    background-size: cover;
+    height: 100vh; 
+}
+
+.saturno {
+    display: flex;   
+    flex-direction:row;
+    align-items:center;
+}
+
+.img-satur img {
+    margin-left: 25%;
+    margin-top: 30%;
+    height: 100%;
+    width: 80%;
+
+    animation: flutuar 4s ease-in-out infinite;
+}
+
+@keyframes flutuar {
+    0%, 100%{
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-70px);
+    }
+}
+.descri-satur {
+    display: flex; 
+    flex-direction:column;
+    align-items:center;
+    margin-right: 10%;
+    width: 80%;
+    padding-top: 10%;
+}
+.descri-satur h1 {
+    font-family: Gluten, Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    color: #AE29B3;
+}
+
+.descri-satur p {
+    text-align: justify;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ee9878;
+    padding: 30px;
+    font-size: 20px;
+}
+
+/*sessão jupiter*/
+.homejupiter {
+    background: url("../imagens/fundo.png")no-repeat center center;
+    background-size: cover;
+    height: 100vh; 
+}
+
+.jupiter {
+    display: flex;   
+    flex-direction:row;
+    align-items:center;
+}
+
+.img-jupiter img {
+    margin-left: 55%;
+    margin-top: 30%;
+    height: 100%;
+    width: 100%;
+
+    animation: flutuar 4s ease-in-out infinite;
+}
+
+@keyframes flutuar {
+    0%, 100%{
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-70px);
+    }
+}
+.descri-jupi {
+    display: flex; 
+    flex-direction:column;
+    align-items:center;
+    margin-right: 10%;
+    width: 80%;
+    padding-top: 10%;
+}
+.descri-jupi h1 {
+    font-family: Gluten, Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    color: #AE29B3;
+    margin-left: 30%;
+}
+
+.descri-jupi p {
+    text-align: justify;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ee9878;
+    padding: 30px;
+    margin-left: 30%;
+    font-size: 20px;
+}
+
+/*buraco negro*/
+.homeburaco {
+    background: url("../imagens/fundo.png")no-repeat center center;
+    background-size: cover;
+    height: 100vh; 
+}
+
+.buraco {
+    display: flex;   
+    flex-direction:row;
+    align-items:center;
+}
+
+.img-buraco img {
+    margin-left: 25%;
+    margin-top: 30%;
+    height: 90%;
+    width: 90%;
+
+    animation: flutuarb 4s ease-in-out infinite;
+}
+
+@keyframes flutuarb {
+    0%, 100%{
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-70px);
+    }
+}
+.descri-buraco {
+    display: flex; 
+    flex-direction:column;
+    align-items:center;
+    margin-right: 10%;
+    width: 80%;
+    padding-top: 10%;
+}
+.descri-buraco h1 {
+    font-family: Gluten, Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    color: #AE29B3;
+    margin-left: 15%;
+}
+
+.descri-buraco p {
+    text-align: justify;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ee9878;
+    padding: 30px;
+    margin-left: 15%;
+    font-size: 20px;
+}
+
+/*botão*/
+.botao {
+    position: absolute;
+     
+}
+.botao a ion-icon {
+    position: fixed;
+    left: 92%;
+    top: 85%;
+    color: #cc7f63;
+    background-color:#501a3e;
+    border-radius: 5px;
+}
+
+/*rodape*/
+
+footer{
+    background-color:#510053;
+    display: flex;
+    flex-direction:column;
+    align-items:center;
+    height: -80px;
+}
+
+footer p {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ee9878;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.icon a, ion-icon{
+    color: #ee9878;
+    height: 30px;
+    width: 30px;
+    margin-top: 20px;
+    
+    
+}
+
+/*menu responsivo*/
+
+@media (max-width: 999px) {
+    body {
+        overflow-x: hidden; /*esconde algo de fora do body*/
+    }
+    .nave-list{
+    position: absolute;
+    top: 8vh;
+    right: 0;
+    width: 45vw;
+    height: 25vh;
+    border-radius: 0 0 0 10px ;
+    background: #510053;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in;
+    }
+
+    .nave-list li {
+        margin-left: 0;
+    }
+
+    .menu-respo {
+        display: block;
+    }
+
+    .nave-list.active {
+        transform: translateX(0);
+    }
+
+}
+
+@media (max-width: 375px) {
+    .carum {
+        position: absolute;
+        width: 80%;
+        height: 40%;
+        margin-left: 10%;
+        margin-top: 60%;
+        border-radius: 20px;
+        backdrop-filter: blur(10px);
+        background-color:rgba(139, 24, 124, 0.116)
+        
+    }
+    
+    .max-width {
+        position: absolute;
+        top: 15%;
+        left: 12%;
+        max-width: 400px;
+    }
+    
+    .texto-descricao h1 {
+        font-family: Gluten, Arial, Helvetica, sans-serif;
+        font-size: 40px;
+        color: #AE29B3;
+        padding: 5px;
+    }
+    
+    .texto-descricao p {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 20px;
+        color: #ee9878
+    }
+
+    .saturno {
+        display: flex;   
+        flex-direction:column;
+        align-items:center;
+    }
+    
+    .img-satur img {
+        display: flex; 
+        flex-direction:column;
+        margin-left: 10%;
+        margin-top: 30%;
+        height: 100%;
+        width: 80%;
+    
+    }
+    
+    .descri-satur {
+        display: flex; 
+        flex-direction:column;
+        align-items:center;
+        margin-right: 2%;
+        width: 100%;
+        padding-top: 5%;
+    }
+    
+    .descri-satur p {
+        text-align: justify;
+        font-family: Arial, Helvetica, sans-serif;
+        color: #ee9878;
+        padding: 23px;
+        font-size: 18px;
+    }
+
+    
+    .jupiter {
+        display: flex;   
+        flex-direction:column;
+        align-items:center;
+    }
+    
+    .img-jupiter img {
+        display: flex; 
+        flex-direction:column;
+        margin-left: 30%;
+        margin-top: 30%;
+        height: 40%;
+        width: 40%;
+    
+    }
+    
+    .descri-jupi {
+        display: flex; 
+        flex-direction:column;
+        align-items:center;
+        margin-right: 44%;
+        width: 140%;
+        padding-top: 5%;
+    }
+
+    
+    .descri-jupi p {
+        text-align: justify;
+        font-family: Arial, Helvetica, sans-serif;
+        color: #ee9878;
+        padding: 23px;
+        font-size: 18px;
+    }
+
+    /*botão*/
+.botao {
+    position: absolute;
+     
+}
+.botao a ion-icon {
+    position: fixed;
+    left: 60%;
+    top: 87%;
+    color: #cc7f63;
+    background-color:#501a3e;
+    border-radius: 5px;
+}
+
+    /*buraco negro*/
+.homeburaco {
+    background: url("../imagens/fundo.png")no-repeat center center;
+    background-size: cover;
+    height: 100vh; 
+}
+
+.buraco {
+    display: flex;   
+    flex-direction:column;
+    align-items:center;
+}
+
+.img-buraco img {
+    display: flex; 
+    flex-direction:column;
+    margin-left: 20%;
+    margin-top: 30%;
+    height: 60%;
+    width: 60%;
+
+}
+
+.descri-buraco {
+    display: flex; 
+    flex-direction:column;
+    align-items:center;
+    margin-right: 18%;
+    width: 115%;
+    padding-top: 5%;
+}
+.descri-buraco h1 {
+    font-family: Gluten, Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    color: #AE29B3;
+    margin-left: 13%;
+}
+
+.descri-buraco p {
+    text-align: justify;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ee9878;
+    padding: 20px;
+    font-size: 18px;
+}
+}
+
+@media (max-width:414px){
+    .carum {
+        position: absolute;
+        width: 80%;
+        height: 40%;
+        margin-left: 10%;
+        margin-top: 60%;
+        border-radius: 20px;
+        backdrop-filter: blur(10px);
+        background-color:rgba(139, 24, 124, 0.116)
+        
+    }
+    
+    .max-width {
+        position: absolute;
+        top: 15%;
+        left: 12%;
+        max-width: 400px;
+    }
+    
+    .texto-descricao h1 {
+        font-family: Gluten, Arial, Helvetica, sans-serif;
+        font-size: 40px;
+        color: #AE29B3;
+        padding: 5px;
+    }
+
+    .saturno {
+        display: flex;   
+        flex-direction:column;
+        align-items:center;
+    }
+    
+    .img-satur img {
+        display: flex; 
+        flex-direction:column;
+        margin-left: 10%;
+        margin-top: 30%;
+        height: 100%;
+        width: 80%;
+    
+    }
+    
+    .descri-satur {
+        display: flex; 
+        flex-direction:column;
+        align-items:center;
+        margin-right: 2%;
+        width: 100%;
+        padding-top: 5%;
+    }
+    
+    .descri-satur p {
+        text-align: justify;
+        font-family: Arial, Helvetica, sans-serif;
+        color: #ee9878;
+        padding: 23px;
+        font-size: 18px;
+    }
+
+    
+    .jupiter {
+        display: flex;   
+        flex-direction:column;
+        align-items:center;
+    }
+    
+    .img-jupiter img {
+        display: flex; 
+        flex-direction:column;
+        margin-left: 30%;
+        margin-top: 30%;
+        height: 40%;
+        width: 40%;
+    
+    }
+    
+    .descri-jupi {
+        display: flex; 
+        flex-direction:column;
+        align-items:center;
+        margin-right: 44%;
+        width: 140%;
+        padding-top: 5%;
+    }
+
+    
+    .descri-jupi p {
+        text-align: justify;
+        font-family: Arial, Helvetica, sans-serif;
+        color: #ee9878;
+        padding: 23px;
+        font-size: 18px;
+    }
+
+    /*buraco negro*/
+.homeburaco {
+    background: url("../imagens/fundo.png")no-repeat center center;
+    background-size: cover;
+    height: 100vh; 
+}
+
+.buraco {
+    display: flex;   
+    flex-direction:column;
+    align-items:center;
+}
+
+.img-buraco img {
+    display: flex; 
+    flex-direction:column;
+    margin-left: 20%;
+    margin-top: 30%;
+    height: 60%;
+    width: 60%;
+
+}
+
+.descri-buraco {
+    display: flex; 
+    flex-direction:column;
+    align-items:center;
+    margin-right: 18%;
+    width: 115%;
+    padding-top: 5%;
+}
+.descri-buraco h1 {
+    font-family: Gluten, Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    color: #AE29B3;
+    margin-left: 13%;
+}
+
+.descri-buraco p {
+    text-align: justify;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ee9878;
+    padding: 20px;
+    font-size: 18px;
+}
+
+   /*botão*/
+   .botao {
+    position: absolute;
+     
+}
+.botao a ion-icon {
+    position: fixed;
+    left: 60%;
+    top: 87%;
+    color: #cc7f63;
+    background-color:#501a3e;
+    border-radius: 5px;
+}
+
+}
+
+
+
+ /*animação botão para X*/
+
+ .menu-respo.active .line1 {
+    transform: rotate(-45deg) translate(-8px, 8px)
+}
+
+.menu-respo.active .line2 {
+    opacity: 0;
+}
+
+.menu-respo.active .line3 {
+    transform: rotate(45deg) translate(-5px, -7px);
+}
+
+
+
