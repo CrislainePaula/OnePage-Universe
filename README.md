@@ -4,6 +4,8 @@ One Page feito com HTML, CSS e JavaScript. Com tema referente as minhas imagens
 vetorias de Satuno, Júpiter e Buraco negro.
 Para esté projeto utilizei animação de flutuação, e menu responsivo para celulares e tablets e também  desenvolvi o seu design, utilizando minhas ilustrações.  
 ### As imagens estão disponiveis caso queira baixar para realizar o projeto, porém apenas para uso não comercial. ###
+Acesse o projeto <a href="https://crislainepaula.github.io/LandingPage-Pandoro/">AQUI!!</a>
+
 
 <img src="imagens/Screenshot_1.png">
 
